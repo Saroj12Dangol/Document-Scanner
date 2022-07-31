@@ -1,4 +1,4 @@
-#Dataset Generation
+# Dataset Generation
 
 Handwritten paragraphs from IAM datasets are uploaded to VGG annotation tool. Rectangle is drawn around each word of all the paragraphs. 
 Those images with rectangles are exported as .json file. .json file contains the information about position, width and height of each rectangles.
