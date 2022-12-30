@@ -1,0 +1,48 @@
+@import "./_variables.module.scss";
+
+.navbarContainer {
+  padding: $container-padding;
+  background-color: $navbar-bg;
+  height: 5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
+}
+
+.logoText {
+  font-size: $logo-fs;
+  line-height: $logo-lh;
+  font-weight: 600;
+}
+.navbarContainer ul {
+  display: flex;
+  gap: 2rem;
+}
+.navbarContainer ul li {
+  cursor: pointer;
+  font-weight: 600;
+  list-style: none;
+  text-transform: uppercase;
+  font-size: $navbar-fs;
+  color: $navbar-fc;
+  line-height: $navbar-lh;
+  position: relative;
+  margin-top: 1rem;
+}
+.navbarContainer ul li::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: gray;
+  top: 100%;
+  transition: 0.3s;
+  transform: scaleX(0);
+  transform-origin: left;
+}
+
+.navbarContainer ul li:hover::before {
+  transition: 0.3s;
+  transform: scaleX(1);
+}
